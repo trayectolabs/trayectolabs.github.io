@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-title-en="Adelante Labs" data-title-es="Adelante Labs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adelante Labs</title>
+<meta name="description" content="Adelante Labs makes small iPhone apps. Our first is Activity Sticker, which turns Apple Health workouts into route stickers for your photos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html" aria-current="page"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#ffd23f"/><path d="M13 43C19 31 25 47 33 35S45 18 52 25" fill="none" stroke="#1b2cb4" stroke-width="6" stroke-linecap="round"/></svg>Adelante Labs</a>
+  <nav class="links" aria-label="Site">
+    <a href="activity-sticker/privacy/index.html"><span data-lang="en">Privacy</span><span data-lang="es" hidden>Privacidad</span></a>
+    <a href="activity-sticker/support/index.html"><span data-lang="en">Support</span><span data-lang="es" hidden>Soporte</span></a>
+    <div class="lang" role="group" aria-label="Language / Idioma">
+      <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-set-lang="es" aria-pressed="false">Español</button>
+    </div>
+  </nav>
+</div></header>
+
+<section class="hero band"><div class="wrap">
+  <div>
+    <div data-lang="en">
+      <h1>Small iPhone apps, made with care.</h1>
+      <p>Adelante Labs builds simple apps that keep your data on your phone. Our first one, Activity Sticker, turns your Apple Health workouts into route stickers for your photos.</p>
+    </div>
+    <div data-lang="es" hidden>
+      <h1>Apps pequeñas para iPhone, hechas con cuidado.</h1>
+      <p>Adelante Labs crea apps sencillas que mantienen tus datos en tu teléfono. La primera, Activity Sticker, convierte tus entrenamientos de Apple Health en stickers con tu ruta para tus fotos.</p>
+    </div>
+  </div>
+
+  <figure class="sticker" role="img" aria-label="Example route sticker on a sunrise photo: 12.4 km, 5:12 per km, 1:04:31">
+    <div class="photo">
+      <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a68"/><stop offset=".55" stop-color="#ffd3a1"/><stop offset="1" stop-color="#ffe9cc"/></linearGradient>
+          <linearGradient id="near" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#30339a"/><stop offset="1" stop-color="#16195a"/></linearGradient>
+        </defs>
+        <rect width="640" height="400" fill="url(#sky)"/>
+        <circle cx="455" cy="128" r="54" fill="#fff4d6" opacity=".92"/>
+        <path d="M0 230C120 170 220 205 320 178S520 150 640 190V400H0Z" fill="#a29bdc"/>
+        <path d="M0 230C120 170 220 205 320 178S520 150 640 190" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="2"/>
+        <path d="M0 292C140 242 262 282 382 252S560 232 640 262V400H0Z" fill="#6260c6"/>
+        <path d="M0 292C140 242 262 282 382 252S560 232 640 262" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2"/>
+        <path d="M0 344C160 312 300 352 432 322S600 312 640 332V400H0Z" fill="url(#near)"/>
+        <path class="route" pathLength="1" transform="translate(0 5)" d="M60 240C110 180 150 262 210 205S300 95 365 140S455 230 505 165S565 82 595 120" fill="none" stroke="#10124a" stroke-opacity=".3" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="route" pathLength="1" d="M60 240C110 180 150 262 210 205S300 95 365 140S455 230 505 165S565 82 595 120" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="60" cy="240" r="10" fill="#ffd23f" stroke="#fff" stroke-width="4"/>
+        <circle cx="595" cy="120" r="10" fill="#141724" stroke="#fff" stroke-width="4"/>
+      </svg>
+      <div class="stats">
+        <div><b>12.4<small>km</small></b><span data-lang="en">Distance</span><span data-lang="es" hidden>Distancia</span></div>
+        <div><b>5:12<small>/km</small></b><span data-lang="en">Pace</span><span data-lang="es" hidden>Ritmo</span></div>
+        <div><b>1:04:31</b><span data-lang="en">Time</span><span data-lang="es" hidden>Tiempo</span></div>
+      </div>
+    </div>
+    <span class="tag"><span data-lang="en">Example sticker</span><span data-lang="es" hidden>Sticker de ejemplo</span></span>
+  </figure>
+</div></section>
+
+<main class="band"><div class="wrap">
+  <h2 class="section-title">Apps</h2>
+  <article class="app">
+    <div class="icon" aria-hidden="true"><svg viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="#1c1c1e"/><path d="M18 68C27 48 37 76 50 55S69 22 82 34" fill="none" stroke="#228b22" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 68C27 48 37 76 50 55S69 22 82 34" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div>
+      <h3>Activity Sticker</h3>
+      <p class="muted"><span data-lang="en">Coming soon to the App Store · iPhone</span><span data-lang="es" hidden>Próximamente en el App Store · iPhone</span></p>
+    </div>
+    <nav class="app-links" aria-label="Activity Sticker">
+      <a href="activity-sticker/privacy/index.html"><span data-lang="en">Privacy policy</span><span data-lang="es" hidden>Aviso de privacidad</span></a>
+      <a href="activity-sticker/support/index.html"><span data-lang="en">Support</span><span data-lang="es" hidden>Soporte</span></a>
+    </nav>
+  </article>
+</div></main>
+
+<footer class="band"><div class="wrap">
+  <span>© 2026 Adelante Labs</span>
+  <span><span data-lang="en">Contact</span><span data-lang="es" hidden>Contacto</span>: <a href="mailto:vazquezguruceaga@gmail.com">vazquezguruceaga@gmail.com</a></span>
+</div></footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
