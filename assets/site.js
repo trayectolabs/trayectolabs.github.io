@@ -13,14 +13,14 @@
   const fromHash = () => ({ '#es': 'es', '#en': 'en' })[location.hash] || null;
 
   let lang = fromHash();
-  if (!lang) { try { lang = localStorage.getItem('adelante-lang'); } catch (e) {} }
+  if (!lang) { try { lang = localStorage.getItem('trayecto-lang'); } catch (e) {} }
   if (lang !== 'es' && lang !== 'en') lang = /^es\b/i.test(navigator.language || '') ? 'es' : 'en';
   setLang(lang);
 
   for (const b of buttons) {
     b.addEventListener('click', () => {
       setLang(b.dataset.setLang);
-      try { localStorage.setItem('adelante-lang', b.dataset.setLang); } catch (e) {}
+      try { localStorage.setItem('trayecto-lang', b.dataset.setLang); } catch (e) {}
     });
   }
   addEventListener('hashchange', () => { const l = fromHash(); if (l) setLang(l); });
